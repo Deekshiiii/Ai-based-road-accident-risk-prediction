@@ -1,0 +1,7 @@
+{
+  "name": "AI-Based Road Accident Risk Prediction & Hotspot Mapping",
+  "description": "An intelligent GIS and machine learning decision support system for accident hotspot identification, dynamic risk scoring, route safety analysis, and explainable AI insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #0B0F19;
+    color: #F1F5F9;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Digital Twin Dark Midnight Grid Background */
+.digital-twin-grid {
+  background-color: #0B0F19;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.digital-twin-subgrid {
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Smooth traffic flow particle animations */
+@keyframes trafficDash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.traffic-flow-line {
+  stroke-dasharray: 4, 8;
+  animation: trafficDash 1.4s linear infinite;
+}
+
+.traffic-flow-fast {
+  stroke-dasharray: 6, 10;
+  animation: trafficDash 0.8s linear infinite;
+}
+
+/* Custom subtle dark scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Leaflet container customized for ivory digital twin */
+.leaflet-container {
+  background-color: #F4F2EC !important;
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #1C1E21 !important;
+  color: #F8F7F4 !important;
+  border: 1px solid #3F3F46 !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 10px 25px -5px rgba(28, 30, 33, 0.25) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background-color: #1C1E21 !important;
+}
